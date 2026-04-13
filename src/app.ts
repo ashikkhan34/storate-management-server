@@ -5,6 +5,7 @@ import { userRoute } from "./app/user/user.route";
 import { registerRoute } from "./app/auth/register/auth.register.route";
 import { loginRoute } from "./app/auth/login/login.route";
 import { noteRouter } from "./app/note/note.route";
+import { fileRouter } from "./app/file/file.route";
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use("/api/auth", registerRoute);
 app.use("/api/auth", loginRoute);
 app.use("/api/auth", loginRoute);
 app.use("/api/note", noteRouter);
+app.use("/api/file", fileRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");

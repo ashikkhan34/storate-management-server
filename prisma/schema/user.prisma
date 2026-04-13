@@ -6,7 +6,7 @@ model User {
     storage  Int    @default(15360)
     used     Int    @default(0)
 
-    //   files     File[]
+    files File[]
     notes Note[]
     //   favorites Favorite[]
 
