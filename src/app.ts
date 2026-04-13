@@ -4,6 +4,7 @@ import { globalErrorHandler } from "./middleware/globalErrorHandler";
 import { userRoute } from "./app/user/user.route";
 import { registerRoute } from "./app/auth/register/auth.register.route";
 import { loginRoute } from "./app/auth/login/login.route";
+import { noteRouter } from "./app/note/note.route";
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", registerRoute);
 app.use("/api/auth", loginRoute);
 app.use("/api/auth", loginRoute);
+app.use("/api/note", noteRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");
