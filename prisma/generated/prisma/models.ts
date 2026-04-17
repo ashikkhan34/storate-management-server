@@ -8,6 +8,7 @@
  *
  * 🟢 You can import this file directly.
  */
+export type * from './models/Favorite'
 export type * from './models/File'
 export type * from './models/Note'
 export type * from './models/Upload'
