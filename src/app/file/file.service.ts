@@ -2,7 +2,7 @@ import { prisma } from "../../lib/prisma";
 
 export const createFileService = async (
   userId: string,
-  payload: { name: string; size: number; url: string },
+  payload: { name: string },
 ) => {
   return await prisma.file.create({
     data: {

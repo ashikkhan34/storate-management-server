@@ -11,6 +11,7 @@ import { fileRouter } from "./app/file/file.route";
 import { uploadRouter } from "./app/upload/upload.route";
 import { favoriteRouter } from "./app/favorite/favorite.route";
 import { logUserRouter } from "./app/log_user/log_user.route";
+import { activityRouter } from "./app/activity/activity.route";
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.use("/api/file", fileRouter);
 app.use("/api/upload-file", uploadRouter);
 app.use("/api/favorite", favoriteRouter);
 app.use("/api/log-user", logUserRouter);
+app.use("/api/activity", activityRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");

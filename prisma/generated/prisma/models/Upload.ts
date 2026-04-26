@@ -523,6 +523,10 @@ export type IntFieldUpdateOperationsInput = {
   divide?: number
 }
 
+export type NullableStringFieldUpdateOperationsInput = {
+  set?: string | null
+}
+
 export type UploadCreateNestedManyWithoutUserInput = {
   create?: Prisma.XOR<Prisma.UploadCreateWithoutUserInput, Prisma.UploadUncheckedCreateWithoutUserInput> | Prisma.UploadCreateWithoutUserInput[] | Prisma.UploadUncheckedCreateWithoutUserInput[]
   connectOrCreate?: Prisma.UploadCreateOrConnectWithoutUserInput | Prisma.UploadCreateOrConnectWithoutUserInput[]

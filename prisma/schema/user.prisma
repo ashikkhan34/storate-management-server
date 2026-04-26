@@ -1,10 +1,10 @@
 model User {
-    id       String @id @default(uuid())
-    name     String
-    email    String @unique
-    password String
-    storage  Int    @default(15360)
-    used     Int    @default(0)
+    id           String @id @default(uuid())
+    name         String
+    email        String @unique
+    password     String
+    totalStorage Int    @default(15360)
+    usedStorage  Int    @default(0)
 
     files  File[]
     notes  Note[]

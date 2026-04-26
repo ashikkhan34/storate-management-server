@@ -88,8 +88,6 @@ export type FavoriteScalarFieldEnum = (typeof FavoriteScalarFieldEnum)[keyof typ
 export const FileScalarFieldEnum = {
   id: 'id',
   name: 'name',
-  size: 'size',
-  url: 'url',
   isFav: 'isFav',
   userId: 'userId',
   createdAt: 'createdAt'
@@ -131,8 +129,8 @@ export const UserScalarFieldEnum = {
   name: 'name',
   email: 'email',
   password: 'password',
-  storage: 'storage',
-  used: 'used',
+  totalStorage: 'totalStorage',
+  usedStorage: 'usedStorage',
   createdAt: 'createdAt'
 } as const
 
